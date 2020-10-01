@@ -1,23 +1,29 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import StoryblokService from '../utils/StoryblokService'
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import StoryblokService from "../utils/StoryblokService";
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
     return (
-      <html>
+      <Html>
         <Head>
-          <script dangerouslySetInnerHTML={{__html: `var StoryblokCacheVersion = '${StoryblokService.getCacheVersion()}';` }}></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `var StoryblokCacheVersion = '${StoryblokService.getCacheVersion()}';`,
+            }}
+          ></script>
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
-    )
+      </Html>
+    );
   }
 }
+
+export default MyDocument;

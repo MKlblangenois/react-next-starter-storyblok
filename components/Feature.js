@@ -1,9 +1,9 @@
-import SbEditable from 'storyblok-react'
+import SbEditable from "storyblok-react";
 
-export default (props) => (
+const Feature = (props) => (
   <SbEditable content={props.content}>
-    <div className="column feature">
-      {props.content.name}
-    </div>
+    <div className="column feature">{props.content.name}</div>
   </SbEditable>
-)
+);
+
+export default Feature;

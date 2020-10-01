@@ -1,5 +1,5 @@
 {
-  "name": "react-next-storyblok-boilerplate",
+  "name": "react-next-starter-storyblok",
   "version": "1.0.0",
   "description": "Next.js Storyblok Boilerplate",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
-  "author": "Alexander Feiglstorfer <delooks@gmail.com>",
+  "author": "Mediakod <webmaster@mediakod.com>",
   "license": "ISC",
   "dependencies": {
     "next": "^9.3.1",
