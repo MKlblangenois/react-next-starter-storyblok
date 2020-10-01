@@ -18,5 +18,10 @@
     "react-dom": "^16.13.0",
     "storyblok-js-client": "^2.1.0",
     "storyblok-react": "0.0.10"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^9.8.6",
+    "tailwindcss": "^1.8.10"
   }
 }
