@@ -12,6 +12,7 @@
   "author": "Mediakod <webmaster@mediakod.com>",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/ui": "^0.6.2",
     "next": "^9.3.1",
     "next-routes": "^1.4.2",
     "react": "^16.13.0",
