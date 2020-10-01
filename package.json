@@ -12,11 +12,17 @@
   "author": "Mediakod <webmaster@mediakod.com>",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/ui": "^0.6.2",
     "next": "^9.3.1",
     "next-routes": "^1.4.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "storyblok-js-client": "^2.1.0",
     "storyblok-react": "0.0.10"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^9.8.6",
+    "tailwindcss": "^1.8.10"
   }
 }
