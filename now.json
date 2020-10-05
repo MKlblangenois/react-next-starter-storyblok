@@ -1,19 +1,16 @@
 {
   "version": 2,
   "name": "react-next-boilerplate",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/next"
-    }
-  ],
-  "routes": [
-    { 
-      "src": "/favicon.ico", 
-      "dest": "/static/favicon.ico" 
+  "builds": [{
+    "src": "package.json",
+    "use": "@now/next"
+  }],
+  "routes": [{
+      "src": "/favicon.ico",
+      "dest": "/static/favicon.ico"
     },
     {
-      "src": "/(.*)$",
+      "src": "/^(?!(_next)).+$",
       "dest": "/index?slug=$1"
     }
   ]
